@@ -1,0 +1,83 @@
+
+
+.navbar-brand h4{
+	color: black;
+	font-weight: bold;
+	font-size: 1.6em;
+
+}
+
+
+
+#header-menu h3{
+	font-weight: bold;
+
+}
+
+
+#nav-list a{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-align: center;
+}
+
+#nav-list a:hover, a:focus{
+	background-color: #FFF8DC;
+}
+
+#main-content{
+	padding-top: 50px;
+}
+
+#header-menu{
+	
+	background-color: white;
+	color: black;
+}
+
+#header-menu h3{
+	
+	font-size: 2em;
+	color: black;
+}
+
+#content-chicken{
+	color: white;
+	background-color: #2F4F4F;
+	height: 800px;
+}
+
+#title-chicken{
+	padding-top: 15px;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#content-chicken section{
+	font-size: 1.2em;
+}
+
+@media (max-width: 767px)
+{
+	
+
+	#nav-list hr{
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	#nav-list {
+		padding-top: 40px;
+		
+	}
+
+	#col-nav{
+		padding-bottom: 0;
+	}
+	
+}
+
+
+		
+
