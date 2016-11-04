@@ -75,11 +75,10 @@ $ajaxUtils.sendGetRequest(
 function buildAndShowHomeHTML (categories) { 
  $ajaxUtils.sendGetRequest( homeHtmlUrl,
           function (homeHtml) {
-                  var chosenCategoryShortName = chooseRandomCategory(allCategoriesUrl);chosenCategoryShortName = "'"+ chosenCategoryShortName+"'";
-                    var homeHtmlToInsertIntoMainPage = homeHtml;
-                    homeHtmlToInsertIntoMainPage = insertProperty(homeHtmlToInsertIntoMainPage,
-                      "randomCategoryShortName",chosenCategoryShortName);
-                        insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+                  var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+                    var homeHtmlToInsertIntoMainPage = "'" + chosenCategoryShortName + "'";
+                    var html = insertProperty(homeHtml, "randomCategoryShortName",homeHtmlToInsertIntoMainPage);
+                      insertHtml("#main-content",html);
                     }, false);
   }
 
